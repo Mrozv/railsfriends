@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem 'yaml', '~> 0.4.0'
-gem "rails", "~> 7.2.0"
+gem "rails", "~> 8.0.1"
 gem "sprockets-rails"
 gem "puma", ">= 5.0"
 gem "importmap-rails"
