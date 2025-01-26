@@ -1,0 +1,27 @@
+<tr id="<%= dom_id friend %>">
+  <td class="align-middle">
+    <%= link_to friend.first_name + " " + friend.last_name, friend, class:"link-offset-2 link-underline link-underline-opacity-0" %>
+  </td>
+
+  <td class="align-middle">
+    <%= friend.email %>
+  </td>
+
+  <td class="align-middle">
+    <%= friend.phone %>
+  </td>
+
+  <td class="align-middle">
+    <%= friend.x %>
+  </td>
+
+  <td class="align-middle">
+    <div class="dropdown">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Actions</button>
+      <ul class="dropdown-menu p-0 p-2" aria-labelledby="dropdownMenuButton">
+        <li><%= link_to "Edit this friend", edit_friend_path(friend), class: "btn btn-outline-info mb-2" %></li>
+        <li><%= button_to "Destroy this friend", friend, method: :delete, class: "btn btn-outline-danger" %></li>
+      </ul>
+    </div>
+  </td>
+</tr>
